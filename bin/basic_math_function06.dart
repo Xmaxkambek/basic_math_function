@@ -13,7 +13,7 @@ import 'dart:math';
 num func(double y,double x){
   pow(cos(x), 2);
   pow(sin(y), 2);
-  return x.round() +y.round() -1;
+  return (cos(x)+sin(y)).round();
 }
 void main() {
   print(func(pi/3, pi/3));
